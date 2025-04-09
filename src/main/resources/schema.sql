@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS usersdb;
+
+USE usersdb;
+
+CREATE TABLE IF NOT EXISTS users (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    lastname VARCHAR(100) NOT NULL,
+    phone_number VARCHAR(20),
+    born_date DATE
+);

@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 import ucb.apiuser.domain.model.User;
 import ucb.apiuser.domain.port.in.UserUseCase;
 import ucb.apiuser.domain.port.out.UserRepository;
-import javax.persistence.EntityNotFoundException;
+import jakarta.persistence.EntityNotFoundException;
 
 @Service
 public class UserService implements UserUseCase {
