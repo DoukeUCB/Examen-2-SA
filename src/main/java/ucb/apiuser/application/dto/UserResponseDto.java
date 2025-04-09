@@ -1,12 +1,24 @@
 package ucb.apiuser.application.dto;
 
 import java.time.LocalDate;
+import io.swagger.v3.oas.annotations.media.Schema;
 
+@Schema(description = "Información del usuario")
 public class UserResponseDto {
+    
+    @Schema(description = "ID único del usuario", example = "1")
     private Long id;
+    
+    @Schema(description = "Nombre del usuario", example = "Juan")
     private String name;
+    
+    @Schema(description = "Apellido del usuario", example = "Pérez")
     private String lastname;
+    
+    @Schema(description = "Número de teléfono del usuario", example = "+591 77712345")
     private String phoneNumber;
+    
+    @Schema(description = "Fecha de nacimiento del usuario", example = "1990-01-01")
     private LocalDate bornDate;
 
     public UserResponseDto() {
